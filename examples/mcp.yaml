@@ -1,0 +1,17 @@
+context:
+  sources:
+    - type: api
+      schema: openapi
+      endpoints: ["/users"]
+  transform:
+    chunk_size: 500
+    strategy: paragraph
+    format: markdown
+  vectorstore:
+    type: local
+    collection: demo
+  injection:
+    mode: preamble
+    template: |
+      ## Contexto:
+      {{context}}

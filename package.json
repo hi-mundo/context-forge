@@ -1,0 +1,17 @@
+{
+  "name": "contextforge-mvp",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "openai": "^4.2.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
